@@ -15,19 +15,20 @@ body {
 
 .main__title {
   margin: 0 0 40px 0;
-  font: bold 66px/87.45px pt_serifregular, arial, helvetica, sans-serif;
+  font: bold 66px pt_serifregular, arial, helvetica, sans-serif;
+  letter-spacing: 2px;
   font-style: normal;
 }
 
 .main__description {
   margin: 0 0 41px 0;
-  font: 22px/25px bold Roboto, arial, helvetica, sans-serif;
+  font: 22px Roboto-Regular, arial, helvetica, sans-serif;
 }
 
 .main__button{
   display: inline-block;
   padding: 18px 21px;
-  font: 18px/20px Roboto, arial, helvetica, sans-serif;
+  font: 18px/20px Roboto-Regular, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
   border-radius: 4px;
@@ -60,7 +61,7 @@ body {
 .menu__item{
   position: relative;
   margin-right: 26px;
-  font: 500 18px/21px bold Roboto, arial, helvetica, sans-serif;
+  font: 500 18px/21px Roboto-Regular, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
