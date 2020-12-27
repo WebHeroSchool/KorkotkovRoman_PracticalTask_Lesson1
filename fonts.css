@@ -6,9 +6,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'pt_serifbold_italic';
     src: url('fonts/ptserif-bolditalic-webfont.woff') format('woff');
@@ -17,9 +14,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'pt_serifitalic';
     src: url('fonts/ptserif-italic-webfont.woff') format('woff');
@@ -27,9 +21,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'pt_serifregular';
@@ -42,6 +33,14 @@
 @font-face {
     font-family: 'Roboto-Regular';
     src: url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('fonts/Roboto-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
