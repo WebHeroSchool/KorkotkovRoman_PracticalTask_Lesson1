@@ -65,14 +65,6 @@ body {
   margin-right: 16px;
 }
 
-.menu_burger{
-    display: none;
-}
-
-.menu_burger_cross{
-  display: none;
-}
-
 .menu__item{
   position: relative;
   margin-right: 26px;
@@ -164,7 +156,6 @@ body {
 
   .header{
     margin: 0;
-    width: 100%;
   }
 
   .logo {
@@ -224,7 +215,6 @@ body {
 
   .header{
     margin: 0;
-    width: 100%;
   }
 
   .logo {
@@ -293,13 +283,42 @@ body {
     left: 0;
   }
 
-  #checkbox:checked ~ .menu_burger_cross{
-    display: block;
-    z-index: 4;
+  .burger{
+      width: 25px;
+      height: 17px;
+      cursor: pointer;
+      position: relative;
+      margin: 33px 0 0 0;
+      z-index: 4;
   }
 
-  #checkbox:checked ~ .menu_burger{
-    display: none;
+  .burger__line{
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #0056EC;
+      position: absolute;
+      left: 0;
+      transition: .3s all linear;
+  }
+  .burger__line_first{
+      top: 0;
+  }
+  .burger__line_second, .burger__line_third{
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  .burger__line_fourth{
+      bottom: 0;
+  }
+  .burger_active .burger__line_first, .burger_active .burger__line_fourth{
+      opacity: 0;
+  }
+  .burger_active .burger__line_second{
+      transform: translateY(-50%) rotate(45deg);
+  }
+  .burger_active .burger__line_third{
+      transform: translateY(-50%) rotate(-45deg);
   }
 
   .menu{
@@ -356,18 +375,10 @@ body {
     width: 100%;
   }
 
-  .menu_burger{
-
-    margin: 14px 0 0 0;
-
-    display: block;
-    padding: 0;
-    line-height: 30px;
-    justify-content: center;
-    z-index: 4;
+  .header {
+    margin-bottom: 28px;
+    width: 87%;
   }
-
-  .header {margin-bottom: 28px;}
 
   .main{
     text-align: center;
@@ -393,24 +404,14 @@ body {
   .footer {
     display: none;
   }
-  
+
 }
 
 @media(max-width:375px){
 
-  #checkbox:checked ~ .menu{
-    visibility: visible;
-    left: 0;
-  }
-
-  #checkbox:checked ~ .menu_burger_cross{
-    display: block;
-    z-index: 4;
-  }
-
-  #checkbox:checked ~ .menu_burger{
-    display: none;
-  }
+    .burger{
+        margin: 14px 0 0 0;
+    }
 
   .menu{
     text-transform: lowercase;
@@ -464,7 +465,6 @@ body {
     width: 80%;
     margin: 36px 24px 0 24px;
   }
-
 
   .header{
     width: 87%;
