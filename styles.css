@@ -139,7 +139,7 @@ body {
   background: #0056ec;
 }
 
-@mediamax-width 1600px {
+@media (max-width: 1600px) {
   .header {
     margin: 0;
   }
@@ -196,7 +196,7 @@ body {
   }
 }
 
-@mediamax-width 1270px {
+@media (max-width: 1270px) {
   .header {
     margin: 0;
   }
@@ -258,7 +258,7 @@ body {
   }
 }
 
-@mediamax-width 960px {
+@media (max-width: 960px) {
   #checkbox:checked ~ .menu {
     visibility: visible;
     left: 0;
@@ -395,7 +395,7 @@ body {
   }
 }
 
-@mediamax-width375px {
+@media (max-width: 375px) {
   .burger {
     margin: 14px 0 0;
   }
